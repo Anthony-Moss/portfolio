@@ -10,3 +10,28 @@ body {
     background: #252627;
     color: rgb(255, 255, 255);
 }
+
+.nav_bar {
+    display: inline-flex;
+}
+
+
+.nav_bar .page_nav, .nav_bar .contact_links {
+    display: inline-block;
+}
+
+.nav_bar ul {
+    padding-left: 20px;
+}
+
+
+.nav_bar li {
+    display: inline-block;
+    padding-block-end: 75px;
+    padding: 8px;
+}
+
+.nav_items {
+    justify-content: flex-end;
+}
+
