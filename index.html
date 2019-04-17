@@ -1,30 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/index.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Anthony's Portfolio Homepage</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- styles for this page -->
+    <link href="./styles/index.css" rel="stylesheet">
+    <style>
+            .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            }
+            @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+            }
+    </style>
 </head>
 <body>
-    <div class="nav_bar">
-        <p>Anthony Moss</p>
-        <div class="nav_items">
-        <ul class="page_nav">
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
-        </ul>
-        <ul class="contact_links">
-            <li>LinkedIn</li>
-            <li>GitHub</li>
-            <li>Twitter</li>
-        </ul>
+    <!-- NavBar element -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+    </li>
+    <!-- Link to About me section of my page -->
+    <li class="nav-item">
+        <a class="nav-link" href="#about-me">About Me</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#main">Portfolio</a>
+    </li>
+
+    <!-- how to do a disabled button if needed  -->
+    <!-- <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </li> -->
+
+    <!-- This last navbar button would act to jump right to a specific project in my portfolio without needing to go to portfilio first -->
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+        <a class="dropdown-item" href="#">Project 1</a>
+        <a class="dropdown-item" href="#">Project 2</a>
+        <a class="dropdown-item" href="#">Project 3</a>
         </div>
-    </div>
+    </li>
+    </ul>
+</div>
+</nav>
+<header><img src="./images/macbook-code.jpg" alt="Macbook code picture"></header>
+<!-- Main container, this is under navbar, will probably have one container for Abt me and for Portfolio -->
+<main role="about-me" class="container">
 
-
+<div class="About-Me">
+    <h1>Hello, I'm Anthony</h1>
+        <p class="lead">I am a Software Developer currently located in Atlanta, GA. I attended Clemson University and graduated with a B.S. in Economics along with Legal Studies and Philosophy minors.
+            Upon graduation I went into the Financial Services field. I started as a financial service representative at E*TRADE Financial. After a few years of moving up the ladder in the Financial 
+            world and seeing the many different sides. I realized this career path wasnt for me, I just didnt have a passion for it and I didnt want to just do it because I was good. I wanted to find something 
+            that I enjoyed doing and could call a passion and put all I had into it. This is where coding came into the picture, I have always loved technology and have been mystified at the amazing things we
+            have been able to fo with programming and decided to actually give it a go.
+            <br><br>
+            It didnt take long for me to realize coding and software development was what I had been looking for all this time. Quickly I was finding myself staying up until the early hours of the morning
+            just practicing and working out problems. I knew this was my perfect fit, not only was the topic super interesting to me but the type of work was exactly what I needed. I love problem solving, and 
+            when it comes down to it, that is what software development is. I am currently enrolled in DigitalCrafts' four-month, full-stack immersive coding bootcamp to take my skills to the next level.
+        </p>
+</div>
+</main>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,37 +1,31 @@
-/* apply a natural box layout model to all elements, but allowing components to change */
 html {
-    box-sizing: border-box;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
+    font-size: 14px;
+    /* height: 100%; */
 }
 
 body {
     background: #252627;
     color: rgb(255, 255, 255);
+    /* height: 100%; */
 }
 
-.nav_bar {
-    display: inline-flex;
-}
-
-
-.nav_bar .page_nav, .nav_bar .contact_links {
-    display: inline-block;
-}
-
-.nav_bar ul {
-    padding-left: 20px;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 
-.nav_bar li {
-    display: inline-block;
-    padding-block-end: 75px;
-    padding: 8px;
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.nav_items {
-    justify-content: flex-end;
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+    }
 }
-
